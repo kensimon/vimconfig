@@ -1,4 +1,4 @@
-hi Comment      term=bold       cterm=NONE ctermfg=darkgrey     ctermbg=NONE gui=NONE guifg=darkgrey guibg=NONE
+hi Comment      term=bold       cterm=NONE ctermfg=darkgrey     ctermbg=NONE gui=NONE guifg=#7f7f7f guibg=NONE
 hi Constant     term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FF55FF guibg=NONE
 hi Special      term=bold       cterm=NONE ctermfg=LightRed     ctermbg=NONE gui=NONE guifg=#FFDDDD guibg=NONE
 hi Identifier   term=underline  cterm=bold ctermfg=Cyan         ctermbg=NONE gui=NONE guifg=Cyan guibg=NONE
@@ -53,4 +53,7 @@ hi link SpecialComment  Special
 hi link Debug       Special
 
 "Dunno why the fuck I need to say this shit twice.
-hi String guifg=#ff55ff
+hi String      guifg=#ff55ff
+hi Character   guifg=#ff55ff
+hi Number      guifg=#ff55ff
+hi Boolean     guifg=#ff55ff
