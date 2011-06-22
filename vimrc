@@ -79,3 +79,4 @@ au BufNewFile,BufRead *.pp set filetype=puppet
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
+autocmd FileType yaml set sw=2 ts=2
