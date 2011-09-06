@@ -47,3 +47,7 @@ au BufNewFile,BufRead *.pp set filetype=puppet
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
+
+"Tabs in macvim
+noremap <D-right> :tabnext<cr>
+noremap <D-left> :tabprev<cr>
