@@ -76,8 +76,22 @@ au BufNewFile,BufRead *.htmlt set filetype=html
 au BufNewFile,BufRead *.asm set filetype=nasm
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.pp set filetype=puppet
+au BufNewFile,BufRead *.coffee set filetype=coffee
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
 autocmd FileType yaml set sw=2 ts=2
 autocmd FileType make set noet
+autocmd FileType coffee set ts=2 sw=2
+
+" Custom commands
+map , <Leader>
+map <Leader>, :NERDTreeToggle<cr>
+map <Leader>f :NERDTreeFind<cr>
+map <Leader>b :BufExplorer<cr>
+
+" Buffer switching easier
+set hidden
+map <C-right> :bnext<cr>
+map <C-left> :bprev<cr>
+
