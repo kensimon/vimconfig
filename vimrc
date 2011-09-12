@@ -77,6 +77,7 @@ au BufNewFile,BufRead *.asm set filetype=nasm
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.pp set filetype=puppet
 au BufNewFile,BufRead *.coffee set filetype=coffee
+au BufNewFile,BufRead Capfile set filetype=ruby
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
