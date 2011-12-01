@@ -51,9 +51,3 @@ hi link SpecialChar Special
 hi link Delimiter   Special
 hi link SpecialComment  Special
 hi link Debug       Special
-
-"Dunno why the fuck I need to say this shit twice.
-hi String      guifg=#ff55ff
-hi Character   guifg=#ff55ff
-hi Number      guifg=#ff55ff
-hi Boolean     guifg=#ff55ff

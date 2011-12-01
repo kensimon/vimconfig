@@ -13,8 +13,8 @@
 
 " {{{ requirement checks
 if !has('ruby')
-    s:ErrMsg( "Error: Required vim compiled with +ruby" )
     finish
+    s:ErrMsg( "Error: Required vim compiled with +ruby" )
 endif
 
 if version < 700
