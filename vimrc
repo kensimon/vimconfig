@@ -49,11 +49,11 @@ set complete=.,w,b,i,t,u
 
 syntax on
 set t_Co=256
-colorscheme mydefaults
-set bg=dark
+set bg=light
+colorscheme solarized
 
 "darkgrey is the only good comment color, fuck all the rest.
-hi Comment ctermfg=darkgrey
+"hi Comment ctermfg=darkgrey
 
 " A nice, minimalistic tabline
 hi TabLine cterm=bold,underline ctermfg=8 ctermbg=none
@@ -62,8 +62,8 @@ hi TabLineFill cterm=bold ctermbg=none
 
 set autoindent		" always set autoindenting on
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 

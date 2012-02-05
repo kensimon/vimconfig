@@ -1,4 +1,4 @@
-colorscheme mydefaults
+colorscheme solarized
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -30,8 +30,8 @@ hi TabLineFill cterm=bold ctermbg=none
 
 set autoindent		" always set autoindenting on
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 
