@@ -49,11 +49,11 @@ set complete=.,w,b,i,t,u
 
 syntax on
 set t_Co=256
-set bg=light
-colorscheme solarized
+set bg=dark
+colorscheme mydefaults
 
 "darkgrey is the only good comment color, fuck all the rest.
-"hi Comment ctermfg=darkgrey
+hi Comment ctermfg=darkgrey
 
 " A nice, minimalistic tabline
 hi TabLine cterm=bold,underline ctermfg=8 ctermbg=none
