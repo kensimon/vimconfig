@@ -69,7 +69,7 @@ set smarttab
 
 filetype indent on
 
-"set nofoldenable
+set foldenable
 set nohlsearch
 set et
 au BufNewFile,BufRead *.htmlt set filetype=html
@@ -80,6 +80,7 @@ au BufNewFile,BufRead *.coffee set filetype=coffee
 au BufNewFile,BufRead *.rabl set filetype=ruby
 au BufNewFile,BufRead Capfile set filetype=ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
+au BufNewFile,BufRead *.rb set filetype=ruby
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
@@ -106,3 +107,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
+
+" Restore old view
+au BufWinLeave * mkview
+au BufWinEnter * loadview
