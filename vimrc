@@ -111,3 +111,5 @@ highlight Pmenu ctermbg=238 gui=bold
 " Restore old view
 au BufWinLeave * mkview
 au BufWinEnter * loadview
+
+call pathogen#infect()
