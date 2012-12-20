@@ -2,6 +2,7 @@ if v:progname =~? "evim"
     finish
 endif
 
+call pathogen#infect()
 " work's env sets term to something dumb. Make vim not care.
 set term=xterm
 
@@ -97,5 +98,3 @@ map <Leader>b :BufExplorer<cr>
 set hidden
 map <C-right> :bnext<cr>
 map <C-left> :bprev<cr>
-
-call pathogen#infect()
