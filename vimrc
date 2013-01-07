@@ -69,7 +69,6 @@ set smarttab
 
 filetype indent on
 
-set foldenable
 set nohlsearch
 set et
 au BufNewFile,BufRead *.htmlt set filetype=html
