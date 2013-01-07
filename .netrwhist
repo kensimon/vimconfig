@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/usr/local/var/mysql'
 let g:netrw_dirhist_2='/Users/ken/dev/apps/storageadmin/app/models/ldapadmin'
 let g:netrw_dirhist_3='/Users/ken/puppet/modules/nagios'
 let g:netrw_dirhist_4='/Users/ken/puppet/modules/scripts/manifests/naqquery'
+let g:netrw_dirhist_5='/home/ksimon/.vim/autoload'
