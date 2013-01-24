@@ -1,4 +1,18 @@
-colorscheme solarized
+if v:progname =~? "evim"
+    finish
+endif
+
+call pathogen#infect()
+" work's env sets term to something dumb. Make vim not care.
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" Make shift-insert work like in Xterm
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -23,6 +37,24 @@ set wildmenu
 set wildmode=longest:full,list:full
 set wildignore=*.swp,*.bak,*.pyc,*.class
 
+"Specifies how keyword completion works
+"http://vimdoc.sourceforge.net/htmldoc/options.html#%27complete%27
+" . - scan the current buffer for matchs
+" w - scan the buffers of other windows
+" b - scan other loaded buffers that are in the buffer list
+" i - scan current and included files
+" t - tag completion
+" u - scan the unloaded buffers that are in the buffer list
+set complete=.,w,b,i,t,u
+
+syntax on
+set t_Co=256
+set bg=dark
+colorscheme mydefaults
+
+"darkgrey is the only good comment color, fuck all the rest.
+hi Comment ctermfg=darkgrey
+
 " A nice, minimalistic tabline
 hi TabLine cterm=bold,underline ctermfg=8 ctermbg=none
 hi TabLineSel cterm=bold ctermfg=0 ctermbg=7
@@ -37,24 +69,31 @@ set smarttab
 
 filetype indent on
 
-"set nofoldenable
 set nohlsearch
 set et
 au BufNewFile,BufRead *.htmlt set filetype=html
 au BufNewFile,BufRead *.asm set filetype=nasm
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.pp set filetype=puppet
+au BufNewFile,BufRead *.coffee set filetype=coffee
+au BufNewFile,BufRead *.rabl set filetype=ruby
+au BufNewFile,BufRead Capfile set filetype=ruby
+au BufNewFile,BufRead Gemfile set filetype=ruby
+au BufNewFile,BufRead *.rb set filetype=ruby
 
 autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
+autocmd FileType yaml set sw=2 ts=2
+autocmd FileType make set noet
+autocmd FileType coffee set ts=2 sw=2
 
-"Tabs in macvim
-noremap <D-right> :tabnext<cr>
-noremap <D-left> :tabprev<cr>
-
-"toggle nerdtree
+" Custom commands
 map , <Leader>
 map <Leader>, :NERDTreeToggle<cr>
+map <Leader>f :NERDTreeFind<cr>
+map <Leader>b :BufExplorer<cr>
 
-" Don't enable folding (blech.)
-set nofoldenable
+" Buffer switching easier
+set hidden
+map <C-right> :bnext<cr>
+map <C-left> :bprev<cr>

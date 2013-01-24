@@ -1,5 +1,6 @@
 hi Comment      term=bold       cterm=NONE ctermfg=darkgrey     ctermbg=NONE gui=NONE guifg=#7f7f7f guibg=NONE
 hi Constant     term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FF55FF guibg=NONE
+hi String       term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FF55FF guibg=NONE
 hi Special      term=bold       cterm=NONE ctermfg=LightRed     ctermbg=NONE gui=NONE guifg=#FFDDDD guibg=NONE
 hi Identifier   term=underline  cterm=bold ctermfg=Cyan         ctermbg=NONE gui=NONE guifg=Cyan guibg=NONE
 hi Statement    term=bold       cterm=NONE ctermfg=Yellow       ctermbg=NONE gui=NONE guifg=#FFFF55 guibg=NONE
@@ -27,7 +28,6 @@ hi CursorLine   guifg=NONE    guibg=#343434 gui=none ctermfg=NONE ctermbg=235 ct
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
-hi link String      Constant
 hi link Character   Constant
 hi link Number      Constant
 hi link Boolean     Constant
