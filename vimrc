@@ -63,8 +63,8 @@ hi TabLineFill cterm=bold ctermbg=none
 
 set autoindent		" always set autoindenting on
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab
 
