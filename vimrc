@@ -99,3 +99,10 @@ map <Leader>b :BufExplorer<cr>
 set hidden
 map <C-right> :bnext<cr>
 map <C-left> :bprev<cr>
+
+" Better comment formatting defaults
+set formatoptions+=ro
+
+if has('patch541')
+  set formatoptions+=j
+end
