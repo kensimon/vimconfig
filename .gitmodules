@@ -4,3 +4,6 @@
 [submodule "bundle/syntax_glsl"]
 	path = bundle/syntax_glsl
 	url = git://github.com/beyondmarc/glsl.vim.git
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = https://github.com/jnwhiteh/vim-golang.git
