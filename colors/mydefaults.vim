@@ -25,6 +25,7 @@ hi Title		guifg=#f6f3e8 guibg=NONE	gui=none ctermfg=254 cterm=bold
 hi Visual		guifg=#faf4c6 guibg=#3c414c gui=none ctermfg=254 ctermbg=238
 hi SpecialKey	guifg=#808080 guibg=#343434 gui=none ctermfg=244 ctermbg=NONE
 hi CursorLine   guifg=NONE    guibg=#343434 gui=none ctermfg=NONE ctermbg=235 cterm=none
+hi Directory    guifg=#3DDFFF guibg=NONE    gui=NONE ctermfg=LightBlue ctermbg=NONE
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
