@@ -1,11 +1,11 @@
 hi Comment      term=bold       cterm=NONE ctermfg=darkgrey     ctermbg=NONE gui=NONE guifg=#7f7f7f guibg=NONE
-hi Constant     term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FF55FF guibg=NONE
-hi String       term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FF55FF guibg=NONE
+hi Constant     term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FD74FF guibg=NONE
+hi String       term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FD74FF guibg=NONE
 hi Special      term=bold       cterm=NONE ctermfg=LightRed     ctermbg=NONE gui=NONE guifg=#FFDDDD guibg=NONE
 hi Identifier   term=underline  cterm=bold ctermfg=Cyan         ctermbg=NONE gui=NONE guifg=Cyan guibg=NONE
 hi Statement    term=bold       cterm=NONE ctermfg=Yellow       ctermbg=NONE gui=NONE guifg=#FFFF55 guibg=NONE
 hi PreProc      term=underline  cterm=NONE ctermfg=LightBlue    ctermbg=NONE gui=NONE guifg=#3DDFFF guibg=NONE
-hi Type         term=underline  cterm=NONE ctermfg=LightGreen   ctermbg=NONE gui=NONE guifg=LightGreen guibg=NONE
+hi Type         term=underline  cterm=NONE ctermfg=LightGreen   ctermbg=NONE gui=NONE guifg=#55FF55 guibg=NONE
 hi Underlined   term=underline  cterm=underline ctermfg=LightBlue            gui=underline guifg=LightBlue
 hi Ignore       term=NONE       cterm=NONE ctermfg=black ctermbg=NONE        gui=NONE guifg=bg guibg=NONE
 
@@ -25,13 +25,19 @@ hi Title		guifg=#f6f3e8 guibg=NONE	gui=none ctermfg=254 cterm=bold
 hi Visual		guifg=#faf4c6 guibg=#3c414c gui=none ctermfg=254 ctermbg=238
 hi SpecialKey	guifg=#808080 guibg=#343434 gui=none ctermfg=244 ctermbg=NONE
 hi CursorLine   guifg=NONE    guibg=#343434 gui=none ctermfg=NONE ctermbg=235 cterm=none
+
+" Stuff that I'd prefer to make "hi link" to above colors, but macvim doesn't seem to obey it.
+
+" hi link Directory PreProc:
 hi Directory    guifg=#3DDFFF guibg=NONE    gui=NONE ctermfg=LightBlue ctermbg=NONE
+
+" hi link Boolean     Constant
+hi Boolean     term=underline  cterm=NONE ctermfg=Magenta      ctermbg=NONE gui=NONE guifg=#FD74FF guibg=NONE
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
 hi link Character   Constant
 hi link Number      Constant
-hi link Boolean     Constant
 hi link Float       Number
 hi link Function    Identifier
 hi link Conditional Statement
