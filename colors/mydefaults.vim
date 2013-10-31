@@ -1,33 +1,26 @@
-hi Comment      term=bold       cterm=NONE      ctermfg=darkgrey     ctermbg=NONE gui=NONE      guifg=#7f7f7f guibg=NONE
-hi Constant     term=underline  cterm=NONE      ctermfg=Magenta      ctermbg=NONE gui=NONE      guifg=#FB79FB guibg=NONE
-hi String       term=underline  cterm=NONE      ctermfg=Magenta      ctermbg=NONE gui=NONE      guifg=#FB79FB guibg=NONE
-hi Special      term=bold       cterm=NONE      ctermfg=LightRed     ctermbg=NONE gui=NONE      guifg=#D28586 guibg=NONE
-hi Identifier   term=underline  cterm=bold      ctermfg=Cyan         ctermbg=NONE gui=NONE      guifg=Cyan    guibg=NONE
-hi Statement    term=bold       cterm=NONE      ctermfg=Yellow       ctermbg=NONE gui=NONE      guifg=#FFFD64 guibg=NONE
-hi PreProc      term=underline  cterm=NONE      ctermfg=LightBlue    ctermbg=NONE gui=NONE      guifg=#73DFFD guibg=NONE
-hi Type         term=underline  cterm=NONE      ctermfg=LightGreen   ctermbg=NONE gui=NONE      guifg=#99FABF guibg=NONE
-hi Underlined   term=underline  cterm=underline ctermfg=LightBlue                 gui=underline guifg=#73DFFD 
+hi Comment      term=bold       cterm=NONE      ctermfg=darkgrey     ctermbg=NONE gui=bold      guifg=#7f7f7f guibg=NONE
+hi Constant     term=NONE       cterm=NONE      ctermfg=Magenta      ctermbg=NONE gui=NONE      guifg=#FB79FB guibg=NONE
+hi String       term=NONE       cterm=NONE      ctermfg=Magenta      ctermbg=NONE gui=NONE      guifg=#FB79FB guibg=NONE
+hi Special      term=bold       cterm=NONE      ctermfg=LightRed     ctermbg=NONE gui=bold      guifg=#FFDFDF guibg=NONE
+hi Identifier   term=NONE       cterm=bold      ctermfg=Cyan         ctermbg=NONE gui=NONE      guifg=Cyan    guibg=NONE
+hi Statement    term=NONE       cterm=NONE      ctermfg=Yellow       ctermbg=NONE gui=NONE      guifg=#FFFD64 guibg=NONE
+hi PreProc      term=NONE       cterm=NONE      ctermfg=LightBlue    ctermbg=NONE gui=NONE      guifg=#73DFFD guibg=NONE
+hi Type         term=NONE       cterm=NONE      ctermfg=LightGreen   ctermbg=NONE gui=NONE      guifg=#99FABF guibg=NONE
+hi Underlined   term=underline  cterm=NONE      ctermfg=LightBlue                 gui=underline guifg=#73DFFD 
 hi Ignore       term=NONE       cterm=NONE      ctermfg=black        ctermbg=NONE gui=NONE      guifg=bg      guibg=NONE
+
+hi CursorLine   guifg=NONE    guibg=#343434 gui=NONE   ctermfg=NONE ctermbg=235  cterm=NONE
+hi Normal       guifg=#e2e2e5 guibg=#202020 gui=NONE   ctermfg=253  ctermbg=NONE
 
 hi Error      term=reverse cterm=NONE ctermfg=White ctermbg=Red gui=NONE guifg=White guibg=Red
 hi Todo       term=standout cterm=NONE ctermfg=Black ctermbg=Yellow gui=NONE guifg=Black guibg=Yellow
 
-" General colors
-hi Cursor 		  guifg=NONE    guibg=#626262 gui=none   ctermbg=NONE
-hi Normal 		  guifg=#e2e2e5 guibg=#202020 gui=none   ctermfg=253  ctermbg=NONE
-hi NonText 		  guifg=#808080 guibg=#303030 gui=none   ctermfg=244  ctermbg=NONE
-hi LineNr 		  guifg=#808080 guibg=#000000 gui=none   ctermfg=238  ctermbg=NONE
-hi StatusLine 	guifg=#d3d3d5 guibg=#444444 gui=italic ctermfg=253  ctermbg=NONE cterm=italic
-hi StatusLineNC guifg=#939395 guibg=#444444 gui=none   ctermfg=246  ctermbg=NONE
-hi VertSplit 	  guifg=#444444 guibg=#444444 gui=none   ctermfg=238  ctermbg=NONE
-hi Folded 		  guibg=#384048 guifg=#a0a8b0 gui=none   ctermbg=NONE ctermfg=248
-hi Title		    guifg=#f6f3e8 guibg=NONE	  gui=none   ctermfg=254  cterm=bold
-hi Visual		    guifg=#faf4c6 guibg=#3c414c gui=none   ctermfg=254  ctermbg=238
-hi SpecialKey	  guifg=#808080 guibg=#343434 gui=none   ctermfg=244  ctermbg=NONE
-hi CursorLine   guifg=NONE    guibg=#343434 gui=none   ctermfg=NONE ctermbg=235  cterm=none
+" A nice, minimalistic tabline
+hi TabLine cterm=bold,NONE      ctermfg=8 ctermbg=NONE
+hi TabLineSel cterm=bold ctermfg=0 ctermbg=7
+hi TabLineFill cterm=bold ctermbg=NONE
 
 " Common groups that link to default highlighting.
-" You can specify other highlighting easily.
 hi link Character      Constant
 hi link Number         Constant
 hi link Float          Number

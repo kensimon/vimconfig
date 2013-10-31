@@ -48,18 +48,11 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 " u - scan the unloaded buffers that are in the buffer list
 set complete=.,w,b,i,t,u
 
-syntax on
+
 set t_Co=256
+syntax on
 set bg=dark
 colorscheme mydefaults
-
-"darkgrey is the only good comment color, fuck all the rest.
-hi Comment ctermfg=darkgrey
-
-" A nice, minimalistic tabline
-hi TabLine cterm=bold,underline ctermfg=8 ctermbg=none
-hi TabLineSel cterm=bold ctermfg=0 ctermbg=7
-hi TabLineFill cterm=bold ctermbg=none
 
 set autoindent		" always set autoindenting on
 
@@ -106,3 +99,11 @@ set formatoptions+=ro
 if has('patch541')
   set formatoptions+=j
 end
+
+" Prevent the global gvimrc for macvim (/Applications/MacVim/.../gvimrc) from
+" setting colorscheme and overriding what we set here.
+let macvim_skip_colorscheme=1
+
+" Inspect color under cursor for color scheme debugging
+map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("
+."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>^M
