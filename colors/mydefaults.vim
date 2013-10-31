@@ -20,6 +20,9 @@ hi TabLine cterm=bold,NONE      ctermfg=8 ctermbg=NONE
 hi TabLineSel cterm=bold ctermfg=0 ctermbg=7
 hi TabLineFill cterm=bold ctermbg=NONE
 
+" Stuff that's already a good color in cterm, but I want to fix them for the GUI:
+hi NonText        term=bold ctermfg=12 gui=bold guifg=#9292E1
+
 " Common groups that link to default highlighting.
 hi link Character      Constant
 hi link Number         Constant
@@ -45,3 +48,7 @@ hi link SpecialComment Special
 hi link Debug          Special
 hi link Directory      PreProc
 hi link Boolean        Constant
+
+" Stuff that for some reason I have to force highlighting for (hi! instead of
+" hi)
+hi! link Title          Special
