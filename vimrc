@@ -104,7 +104,7 @@ end
 " setting colorscheme and overriding what we set here.
 let macvim_skip_colorscheme=1
 set guifont=Consolas:12
-set transparency=10
+"set transparency=10
 
 " Inspect color under cursor for color scheme debugging
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>^M
