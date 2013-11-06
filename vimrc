@@ -117,3 +117,6 @@ endif
 if &term == "screen" || &term == "xterm"
   set title
 endif
+
+" The only correct unicode encoding.
+set encoding=utf-8
