@@ -1,12 +1,16 @@
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+    branch = master
 [submodule "bundle/syntax_glsl"]
 	path = bundle/syntax_glsl
 	url = git://github.com/beyondmarc/glsl.vim.git
+    branch = master
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
+    branch = master
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+    branch = master
