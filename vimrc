@@ -123,3 +123,5 @@ set encoding=utf-8
 
 " Allow mousing in terminals
 set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
