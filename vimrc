@@ -120,3 +120,6 @@ endif
 
 " The only correct unicode encoding.
 set encoding=utf-8
+
+" Allow mousing in terminals
+set mouse=a
