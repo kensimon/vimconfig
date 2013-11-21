@@ -14,3 +14,6 @@
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
     branch = master
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
