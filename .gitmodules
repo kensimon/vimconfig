@@ -17,3 +17,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/vim-protobuf"]
+	path = bundle/vim-protobuf
+	url = git://github.com/uarun/vim-protobuf.git
