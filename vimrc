@@ -80,7 +80,7 @@ autocmd FileType ruby set sw=2 ts=2
 autocmd FileType puppet set sw=2 ts=2
 autocmd FileType yaml set sw=2 ts=2
 autocmd FileType make set noet
-autocmd FileType coffee set ts=2 sw=2
+autocmd FileType coffee set ts=4 sw=4
 
 " Custom commands
 map , <Leader>
