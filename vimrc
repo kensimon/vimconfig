@@ -2,6 +2,11 @@ if v:progname =~? "evim"
     finish
 endif
 
+" Use old regex engine for speed
+set re=1
+set ttyfast
+set lazyredraw
+
 call pathogen#infect()
 " work's env sets term to something dumb. Make vim not care.
 set term=xterm
