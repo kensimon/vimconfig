@@ -3,7 +3,10 @@ if v:progname =~? "evim"
 endif
 
 " Use old regex engine for speed
-set re=1
+if v:version >= 704
+    set re=1
+endif
+
 set ttyfast
 set lazyredraw
 
