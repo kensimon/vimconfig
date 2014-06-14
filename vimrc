@@ -103,7 +103,7 @@ map <C-right> :bnext<cr>
 map <C-left> :bprev<cr>
 
 " Better comment formatting defaults
-set formatoptions+=ro
+set formatoptions+=r
 
 if has('patch541')
   set formatoptions+=j
