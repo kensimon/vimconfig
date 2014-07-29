@@ -90,6 +90,7 @@ autocmd FileType puppet set sw=2 ts=2
 autocmd FileType yaml set sw=2 ts=2
 autocmd FileType make set noet
 autocmd FileType coffee set ts=4 sw=4
+autocmd FileType jade set ts=4 sw=4 noet
 
 " Custom commands
 map , <Leader>
