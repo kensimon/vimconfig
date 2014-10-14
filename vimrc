@@ -93,6 +93,8 @@ autocmd FileType coffee set ts=4 sw=4
 autocmd FileType jade set ts=4 sw=4 noet
 autocmd FileType go set ts=8 sw=8 noet
 
+autocmd FileType ruby,puppet,coffee,go autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " Custom commands
 map , <Leader>
 map <Leader>, :NERDTreeToggle<cr>
