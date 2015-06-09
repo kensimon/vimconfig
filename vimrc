@@ -96,10 +96,14 @@ autocmd FileType go set ts=8 sw=8 noet
 autocmd FileType ruby,puppet,coffee,go autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Custom commands
+map <Space> <Leader>
 map , <Leader>
 map <Leader>, :NERDTreeToggle<cr>
+map <Leader><Space> :NERDTreeToggle<cr>
 map <Leader>f :NERDTreeFind<cr>
-map <Leader>b :BufExplorer<cr>
+map <silent> <Leader>b :BufExplorer<cr>
+map <silent> <Leader>s :split<cr>
+
 
 " Buffer switching easier
 set hidden
@@ -138,3 +142,7 @@ set encoding=utf-8
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+
+" Set bufexplorer options so that <Leader>b just goes straight to a horizontal split
+let g:bufExplorerDisableDefaultKeyMapping=1
+let g:bufExplorerFindActive=1
