@@ -139,9 +139,9 @@ endif
 set encoding=utf-8
 
 " Allow mousing in terminals
-set mouse=a
-map <ScrollWheelUp> <C-Y>
-map <ScrollWheelDown> <C-E>
+"set mouse=a
+"map <ScrollWheelUp> <C-Y>
+"map <ScrollWheelDown> <C-E>
 
 " Set bufexplorer options so that <Leader>b just goes straight to a horizontal split
 let g:bufExplorerDisableDefaultKeyMapping=1
