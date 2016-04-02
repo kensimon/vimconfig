@@ -142,3 +142,7 @@ set encoding=utf-8
 " Set bufexplorer options so that <Leader>b just goes straight to a horizontal split
 let g:bufExplorerDisableDefaultKeyMapping=1
 let g:bufExplorerFindActive=1
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/]((\.git|\.hg|\.svn)|node_modules|vendor\/assets)$'
+  \}
