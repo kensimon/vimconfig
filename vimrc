@@ -63,6 +63,7 @@ set bg=dark
 colorscheme mydefaults
 
 set autoindent		" always set autoindenting on
+set nohlsearch
 
 set tabstop=4
 set shiftwidth=4
@@ -71,8 +72,6 @@ set smarttab
 
 filetype indent on
 
-set nohlsearch
-set et
 au BufNewFile,BufRead *.htmlt set filetype=html
 au BufNewFile,BufRead *.asm set filetype=nasm
 au BufNewFile,BufRead *.go set filetype=go
@@ -85,14 +84,11 @@ au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead *.rb set filetype=ruby
 au BufNewFile,BufRead *.vp,*.fp,*.gp,*.vs,*.fs,*.gs,*.tcs,*.tes,*.vert,*.frag,*.geom,*.tess,*.shd,*.gls,*.glsl set ft=glsl330
 
-autocmd FileType ruby set sw=2 ts=2
-autocmd FileType puppet set sw=2 ts=2
-autocmd FileType yaml set sw=2 ts=2
-autocmd FileType make set noet
-autocmd FileType coffee set ts=4 sw=4
-autocmd FileType jade set ts=4 sw=4 noet
+autocmd FileType ruby,puppet,yaml,javascript set sw=2 ts=2 et
+autocmd FileType make,jade set noet
 autocmd FileType go set ts=8 sw=8 noet
 
+" Clear treailing whitespace for some languages
 autocmd FileType ruby,puppet,coffee,go autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Custom commands
