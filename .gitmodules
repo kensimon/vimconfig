@@ -44,3 +44,6 @@
 [submodule "bundle/vim-gradle"]
 	path = bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle
+[submodule "bundle/vim-jsonnet"]
+	path = bundle/vim-jsonnet
+	url = https://github.com/google/vim-jsonnet
